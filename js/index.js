@@ -32,9 +32,22 @@ let pColor = document.querySelector("p")
 pColor.addEventListener("dblclick", event => event
 .target.style.color = "purple")
 
+
 let logo = document.querySelector("h1.logo-heading");
 logo.addEventListener("wheel", event => event 
 .target.style.color = "blue")
 
+
+let mainImage = document.querySelector(".intro img")
+this.addEventListener("drag", event => {
+  
+    mainImage.setAttribute("src", "img/boom.png")
+    })
+
+
+
+    let destinationColor = document.querySelector("h4");
+destinationColor.addEventListener("mouseover", event => event 
+.target.style.color = "lightblue")
 
 
