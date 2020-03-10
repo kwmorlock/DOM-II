@@ -47,7 +47,7 @@ pColors.addEventListener("click", event => event
 
 
 let logos = document.querySelector("h1.logo-heading");
-logos.addEventListener("dblclick", event => event 
+logos.addEventListener("mouseout", event => event 
 .target.style.backgroundColor = "red")
 
 //fifth
@@ -75,7 +75,7 @@ destinationColor.addEventListener("mouseover", event => event
 
 
 let bColor = document.querySelector("h4");
-bColor.addEventListener("mousemove", event => event 
+bColor.addEventListener("contextmenu", event => event 
 .target.style.backgroundColor = "green")
 
 //ninth
@@ -90,4 +90,24 @@ let haColor = document.querySelector("h2");
 haColor.addEventListener("mouseup", event => event 
 .target.style.color = "white")
 
+//bonusgabe pic
 
+
+let mImage = document.querySelector(".img-content img")
+this.addEventListener("drag", event => {
+  
+    mImage.setAttribute("src", "img/gabe.png")
+    })
+
+
+
+
+
+    let meow = document.querySelectorAll("a.nav-link")
+    meow.forEach(btn => {
+        event.stopPropagation()
+        event.preventDefault()
+    })
+
+
+    
